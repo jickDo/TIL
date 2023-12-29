@@ -14,9 +14,8 @@
 
 우선 배열 선언을 보겠다.
 
-````
+````java
 int[] nums = {1,10,7,4,5};
-
 String[] stringArray = {"A", "C", "D", "B", "Z"};
 ````
 
@@ -24,12 +23,12 @@ int와 String타입의 배열을 선언하였다.
 
 자바의 배열을 정렬하기 위해서는 우선 Arrays를 import해야한다.
 
-````
+````java
 import java.util.Arrays
 ````
 
 그런다음 ````Arrays.sort()```` 매개 변수에 정렬하고자 하는 배열을 넣어주면 된다.
-````
+````java
 Arrays.sort(nums);  //int형 배열 정렬
 Arrays.sort(stringArray); //String형 배열 정렬
 ````
@@ -42,7 +41,7 @@ int형 정렬은 물론이고 문자열또한 정렬된다.
 ---
 그렇다면 내림차순 정렬도 가능할까? 물론이다.
 
-````
+````java
 public static <T> void sort(T[] a, Comparator<? super T> c)
 ````
 Arrays.java 에 들어가면 위 코드처럼 생긴 메서드가 있다. 매개변수로 Comparator이라는 인터페이스를 받게 되어있는데
@@ -50,7 +49,8 @@ Arrays.java 에 들어가면 위 코드처럼 생긴 메서드가 있다. 매개
 
 어... 근데 Comparator는 인터페이스고, 그러면 구현은 사용자가 해야하나? 라는 생각이 들어서 황급히 찾아보니 
 Collections에 reverseOrder 메서드가 있다.
-````
+
+````java
  public static <T> Comparator<T> reverseOrder() {
         return (Comparator<T>) ReverseComparator.REVERSE_ORDER;
     }
@@ -58,9 +58,10 @@ Collections에 reverseOrder 메서드가 있다.
 참고로 reverseOrder()은 이렇게 생겼다.
 
 어쩃든, 내림차순 정렬은 
-````
+
+```java
 Arrays.sort(stringArray,Collections.reverseOrder());
-````
+```
 이렇게 하면된다. 결과는 당연하게
 ````
 Z
@@ -78,7 +79,7 @@ A
 ---
 
 다음은 부분정렬이다. 부분 정렬은 배열의 일부만 선택해서 정렬하는 것이고, 정렬을 원하는 시작 인덱스와 끝 인덱스만 추가 인자로 넣어주면 된다.
-````
+````java
 Arrays.sort(stringArray,2,4);
 ````
 이렇게 정렬을 하면 결과는,
