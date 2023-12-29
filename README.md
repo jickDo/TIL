@@ -1,2 +1,11 @@
-# TIL
-Today I Learned
+# TIL WIKI
+
+## JAVA
+
+
+
+## SPRING
+
+
+
+## ALGORITHM
