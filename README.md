@@ -1,4 +1,4 @@
-# TIL WIKI
+# Today I Learned - Akashic records
 
 ## JAVA
 
