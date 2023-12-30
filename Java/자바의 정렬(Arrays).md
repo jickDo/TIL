@@ -34,6 +34,8 @@ Arrays.sort(stringArray); //String형 배열 정렬
 ````
 int형 정렬은 물론이고 문자열또한 정렬된다.
 
+**참고로 Arrays.sort는 void형 메서드 이므로 따로 출력을 해줘야 한다**
+
 <br><br>
 
 ### 내림차순 정렬
