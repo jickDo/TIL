@@ -20,6 +20,7 @@
 
 - [객체지향의 4가지 특징 - 캡슐화](https://github.com/jickDo/TIL/blob/main/OOP/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98%204%EA%B0%80%EC%A7%80%20%ED%8A%B9%EC%A7%95%20-%20%EC%BA%A1%EC%8A%90%ED%99%94.md)
 - [객체지향의 4가지 특징 - 추상화](https://github.com/jickDo/TIL/blob/main/OOP/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98%204%EA%B0%80%EC%A7%80%20%ED%8A%B9%EC%A7%95%20-%20%EC%B6%94%EC%83%81%ED%99%94.md)
+- [객체지향의 4가지 특징 - 상속](https://github.com/jickDo/TIL/blob/main/OOP/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98%204%EA%B0%80%EC%A7%80%20%ED%8A%B9%EC%A7%95%20-%20%EC%83%81%EC%86%8D.md)
 
 ## ALGORITHM
 
