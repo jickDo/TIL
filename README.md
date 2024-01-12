@@ -15,6 +15,7 @@
 
 ## SPRING
 
+- [로깅 그리고 전략](https://github.com/jickDo/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%A0%84%EB%9E%B5.md)
 
 ## OOP
 
