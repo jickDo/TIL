@@ -17,6 +17,10 @@
 
 - [로깅 그리고 전략](https://github.com/jickDo/TIL/blob/main/Spring/%EB%A1%9C%EA%B9%85%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%A0%84%EB%9E%B5.md)
 
+## 네트워크
+
+- [파일을 전송하기 위해서 알아야 하는것](https://github.com/jickDo/TIL/blob/main/Network/%ED%8C%8C%EC%9D%BC%EC%9D%84%20%EC%A0%84%EC%86%A1%EC%9D%84%20%ED%95%A0%EB%A0%A4%EB%A9%B4%3F%20.md)
+
 ## OOP
 
 - [객체지향의 4가지 특징 - 캡슐화](https://github.com/jickDo/TIL/blob/main/OOP/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%9D%98%204%EA%B0%80%EC%A7%80%20%ED%8A%B9%EC%A7%95%20-%20%EC%BA%A1%EC%8A%90%ED%99%94.md)
