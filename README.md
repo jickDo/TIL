@@ -9,7 +9,7 @@
   - [문자열 자르기 2편 - substring](https://github.com/jickDo/TIL/blob/main/Java/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%9E%90%EB%A5%B4%EA%B8%B02(substring).md)
   - [문자열 자르기 3편 - split](https://github.com/jickDo/TIL/blob/main/Java/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%9E%90%EB%A5%B4%EA%B8%B03(split).md)
   - [StringBuilder 톺아보기](https://github.com/jickDo/TIL/blob/main/Java/StringBuilder%EC%9D%98%20%EB%AA%A8%EB%93%A0%EA%B2%83!.md)
-
+  - [에러와 예외의 계층구조](https://github.com/jickDo/TIL/blob/main/Java/%EC%9E%90%EB%B0%94%EC%9D%98%20%EC%97%90%EB%9F%AC%EC%99%80%20%EC%98%88%EC%99%B8%20%EA%B5%AC%EC%A1%B0.md)
 ## KOTLIN
 
 
