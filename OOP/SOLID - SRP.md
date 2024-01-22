@@ -9,7 +9,9 @@ SOLID를 적용하면 코드를 확장하고 유지보수하는데 도움을 주
 오늘은 SOLID원칙중 SRP에 대해 알아본다.
 
 
-자
+<br><br>
+
+## SRP (Single Responsibility Principle)
 
 ---
 
