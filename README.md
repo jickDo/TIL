@@ -41,7 +41,7 @@
 ## DATA STRUCTURE
 
 - 컬렉션 프레임워크
-  - ex 
+  - [List, Queue, Set](https://github.com/jickDo/TIL/blob/main/Data%20Structure/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.md) 
 
 ## ALGORITHM
 
