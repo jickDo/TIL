@@ -46,7 +46,7 @@
   - [Map](https://github.com/jickDo/TIL/blob/main/Data%20Structure/%EC%BB%AC%EB%A0%89%EC%85%98%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%20(Map).md)
 
 ## ALGORITHM
-
+- 알고리즘 개념
   - [에라토스테네스의 체](https://github.com/jickDo/TIL/blob/main/Algorithm/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98%20%EC%B2%B4.md)
-
-
+- 트러블 슈팅
+  - [P LV.2 전화번호목록](https://github.com/jickDo/TIL/blob/main/Algorithm/Trouble%20Shooting/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Lv2.%20%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md)
