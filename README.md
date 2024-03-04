@@ -42,6 +42,7 @@
 
 - [Template Method Pattern](https://github.com/jickDo/TIL/blob/main/Design%20Pattern/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A9%94%EC%86%8C%EB%93%9C%20%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80%3F.md)
 - [Factory Method Pattern](https://github.com/jickDo/TIL/blob/main/Design%20Pattern/%ED%8C%A9%ED%86%A0%EB%A6%AC%20%EB%A9%94%EC%86%8C%EB%93%9C%20%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80%3F.md)
+- [Strategy Pattern](https://github.com/jickDo/TIL/blob/main/Design%20Pattern/%EC%A0%84%EB%9E%B5%20%ED%8C%A8%ED%84%B4%EC%9D%B4%EB%9E%80%3F.md)
 
 ## DATA STRUCTURE
 
