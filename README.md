@@ -57,3 +57,10 @@
   - [에라토스테네스의 체](https://github.com/jickDo/TIL/blob/main/Algorithm/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98%20%EC%B2%B4.md)
 - 트러블 슈팅
   - [P LV.2 전화번호목록](https://github.com/jickDo/TIL/blob/main/Algorithm/Trouble%20Shooting/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Lv2.%20%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.md)
+
+## BOOK
+- 데이터베이스 개론
+  - [CP.01 데이터베이스의 기본개념](https://github.com/jickDo/TIL/blob/main/Book/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B0%9C%EB%A1%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90.md) 
+
+  
+
