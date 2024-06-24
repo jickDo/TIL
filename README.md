@@ -67,4 +67,4 @@
   - [CP.05 관계 데이터 모델](https://github.com/jickDo/TIL/blob/main/Book/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B0%9C%EB%A1%A0/%EA%B4%80%EA%B3%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%AA%A8%EB%8D%B8.md)
   - [CP.06 관계 데이터 연산](https://github.com/jickDo/TIL/blob/main/Book/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B0%9C%EB%A1%A0/%EA%B4%80%EA%B3%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%B0%EC%82%B0.md)
   - [CP.07 데이터베이스 언어 SQL](https://github.com/jickDo/TIL/blob/main/Book/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B0%9C%EB%A1%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%96%B8%EC%96%B4%20SQL.md)
-
+  - [CP.07 데이터베이스 VIEW](https://github.com/jickDo/TIL/blob/main/Book/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B0%9C%EB%A1%A0/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%96%B8%EC%96%B4%20%EB%B7%B0.md)
