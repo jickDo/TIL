@@ -25,24 +25,21 @@ jobs:
       - name: Cache gems
         uses: actions/cache@v2
         with:
-          path: TIL/vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('TIL/Gemfile.lock') }}
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
 
       - name: Install dependencies
         run: |
-          cd TIL
           gem install bundler
-          bundle install
+          bundle install --gemfile=TIL/Gemfile
 
       - name: Check docs directory
         run: ls -al TIL/docs
 
       - name: Build Jekyll site
-        run: |
-          cd TIL
-          bundle exec jekyll build --source docs --destination _site
+        run: bundle exec jekyll build --source TIL/docs --destination TIL/_site --config TIL/_config.yml
 
       - name: Check _site directory
         run: ls -al TIL/_site
