@@ -26,13 +26,30 @@ jobs:
         uses: actions/cache@v2
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: Build and Deploy Jekyll site
-        uses: helaili/jekyll-action@v2
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --source TIL/docs --destination _site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          jekyll_src: 'TIL/docs'
-          target_branch: 'gh-pages'
+          name: _site
+          path: _site
+
+  deploy:
+    needs: jekyll
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        with:
+          artifact_name: _site
+          publish_branch: gh-pages
