@@ -35,6 +35,9 @@ jobs:
           gem install bundler
           bundle install
 
+      - name: Check TIL/docs directory
+        run: ls -al TIL/docs
+
       - name: Build Jekyll site
         run: bundle exec jekyll build --source TIL/docs --destination _site
 
