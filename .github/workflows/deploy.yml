@@ -50,3 +50,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: _site
+          publish_branch: main
