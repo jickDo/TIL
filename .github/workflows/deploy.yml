@@ -1,36 +1,56 @@
-name: Deploy Jekyll site
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
   push:
-    branches:
-      main
+    branches: ["main"]
     paths:
       - '**.md'
 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Ruby
-        uses: actions/setup-ruby@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-
-      - name: Install Jekyll and Bundler
+          ruby-version: '2.7'
+      - name: Install Dependencies
         run: |
-          gem install jekyll bundler
-
-      - name: Build the site
-        run: |
+          gem install bundler
           bundle install
+      - name: Build with Jekyll
+        run: |
           bundle exec jekyll build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          name: _site
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: _site
