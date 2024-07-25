@@ -22,33 +22,27 @@ jobs:
         with:
           ruby-version: '3.0'
 
-      - name: List directory contents for debugging
-        run: ls -al
-
       - name: Cache gems
         uses: actions/cache@v2
         with:
-          path: TIL/vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('TIL/Gemfile.lock') }}
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
 
       - name: Install dependencies
         run: |
-          cd TIL
           gem install bundler
           bundle install
 
       - name: Build Jekyll site
-        run: |
-          cd TIL
-          bundle exec jekyll build --source docs --destination _site
+        run: bundle exec jekyll build --source docs --destination _site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           name: jekyll-site
-          path: TIL/_site
+          path: _site
 
   deploy:
     needs: jekyll
