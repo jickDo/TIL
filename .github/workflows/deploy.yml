@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          name: _site
+          name: jekyll-site
           path: _site
 
   deploy:
@@ -51,5 +51,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
-          artifact_name: _site
+          artifact_name: jekyll-site
           publish_branch: gh-pages
