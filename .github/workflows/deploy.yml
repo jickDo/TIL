@@ -38,9 +38,6 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build --source docs --destination _site
 
-      - name: Check _site directory structure
-        run: ls -R _site
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
