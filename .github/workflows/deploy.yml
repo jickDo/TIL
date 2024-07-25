@@ -1,54 +1,54 @@
-name: Testing the GitHub Pages publication
-
-on:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-jobs:
-  jekyll:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-
-      - name: Cache gems
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --source docs --destination _site
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          name: jekyll-site
-          path: _site
-
-  deploy:
-    needs: jekyll
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
-        with:
-          artifact_name: jekyll-site
+#name: Testing the GitHub Pages publication
+#
+#on:
+#  push:
+#    branches:
+#      - main
+#
+#permissions:
+#  contents: read
+#  pages: write
+#  id-token: write
+#
+#jobs:
+#  jekyll:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v3
+#
+#      - name: Set up Ruby
+#        uses: ruby/setup-ruby@v1
+#        with:
+#          ruby-version: '3.0'
+#
+#      - name: Cache gems
+#        uses: actions/cache@v2
+#        with:
+#          path: vendor/bundle
+#          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}
+#          restore-keys: |
+#            ${{ runner.os }}-gems-
+#
+#      - name: Install dependencies
+#        run: |
+#          gem install bundler
+#          bundle install
+#
+#      - name: Build Jekyll site
+#        run: bundle exec jekyll build --source docs --destination _site
+#
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v1
+#        with:
+#          name: jekyll-site
+#          path: _site
+#
+#  deploy:
+#    needs: jekyll
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Deploy to GitHub Pages
+#        uses: actions/deploy-pages@v2
+#        with:
+#          artifact_name: jekyll-site
